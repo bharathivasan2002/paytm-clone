@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 10vh;
+    padding: 18px 0px 0px 10px;
+}
+.logo img{
+    width: 80px;
+}
+header .payment{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    transform: translate(85px,-38px);
+    font-size: 12px;
+    color: #01B7F8;
+    font-weight: 500;
+}
+header .bank{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    transform: translate(85px,-22px);
+    font-size: 12px;
+    color: #01B7F8;
+    font-weight: 500;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+
+main .sidebar{
+    width: 40%;
+    height: 100%;
+    background-color: #01296F;
+    overflow: hidden;
+}
+.sidebar .sec{
+    margin: 50px;
+}
+.mainheading{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.heading{
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.phara{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.knowbtn{
+    color: #01B7F8;
+    padding: 8px 15px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #01B7F8 ;
+    cursor: pointer;
+    transform: translateY(-30px);
+}
+
+
+
+main .logincontainer{
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .logincontainer .login{
+    width: 640px;
+    height: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    margin-top: 40px;
+}
+.loginheading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin: 0px 0px 20px 0px;
+    font-weight: 500;
+}
+
+.inputgroup{
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+.inputgroup label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #677F9F;
+    transition: all 0.5s;
+}
+.inputgroup input{
+    width: 100%;
+    height: 50px;
+    padding: 25px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #aebfd6a4;
+    outline: none;
+}
+.inputgroup input:focus~label,
+.inputgroup input:valid~label{
+    top: 10px;
+    font-size: 12px;
+}
+
+.otpbtn{
+    padding: 10px 20px;
+    color: white;
+    background-color: #01B7F8;
+    outline: none;
+    border: 2px solid #01B7F8;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+}
+.terms{
+    font-size: 12px;
+    color: #677F9F;
+    margin: 0px 0px 20px 0px;
+}
+.terms span{
+    color: #01B7F8;
+}
+.bottomlogin{ 
+    box-shadow: 0px -6px 5px -1px rgba(99, 99, 99, 0.2);
+    padding: 10px;
+    transform: translateY(110px);
+    font-size: 14px;
+    font-weight: 600;
+    color: #01B7F8;
+}
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: #01B7F8;
+}
+
+
+
+
+
+@media screen and (max-width:650px) {
+    main .sidebar{
+        display: none;
+    }
+
+    main .logincontainer{
+        min-width: 100%;
+        border: none;
+    }
+    main .logincontainer .login{
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    main .logincontainer .login{
+        box-shadow: none; 
+    }
+    .bottomlogin{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    main .logincontainer .login{
+        margin-top:40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    footer{
+        display: none;
+    }
+ 
+}
